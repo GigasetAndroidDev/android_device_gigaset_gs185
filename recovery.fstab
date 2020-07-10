@@ -1,0 +1,8 @@
+/boot           emmc        /dev/block/by-name/boot          flags=backup=1
+/cache          ext4        /dev/block/by-name/cache
+/data           ext4        /dev/block/by-name/userdata      flags=encryptable=footer;length=-16384
+/misc           emmc        /dev/block/by-name/misc
+/recovery       emmc        /dev/block/by-name/recovery      flags=backup=1
+/sdcard         auto        /dev/block/mmcblk1p1             flags=storage;wipeingui;removable;display="MicroSD card"
+/system         ext4        /dev/block/by-name/system
+/vendor         ext4        /dev/block/by-name/vendor
